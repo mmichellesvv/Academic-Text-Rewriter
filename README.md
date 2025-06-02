@@ -5,7 +5,7 @@ Repo provides a Python script for translating the contents of Excel files betwee
 ---
 ### Abstract
 
-Publishing is a tricky issue when it comes to renovating and extending the original book — by adding paragraphs, text chunks, or other details. Thanks to Python and Groq Cloud, editorial audits can be automated. This repo offers a flexible tool for text rewriting with slight expansion and auto translation.
+Publishing is a tricky issue when it comes to renovating and extending the original book — by adding paragraphs, text chunks, or other details. Thanks to Python and Groq Cloud, editorial audits can be automated. This repo offers a flexible tool for text rewriting with slight expansion..
 
 ---
 
@@ -16,9 +16,16 @@ Publishing is a tricky issue when it comes to renovating and extending the origi
 - **Progress Indicator:** Displays a progress indicator while processing the translation.
 - **Output Naming:** Saves the translated file with a prefix indicating the target language.
 
-## Installation
+### Usage
 
-To install the required libraries, run:
+## API Key Creating
+
+Go to **https://console.groq.com/keys**. Log in, create key, copy number and keep it **safety**.
+
+## Installation
+1. Download the **requirements.txt** and **rewrIT-er.py** files from repo. Place it along with aimed .docx or .pdf file in the **same** folder.
+2. Open a terminal (Command Prompt) and navigate to this folder (cd [folder name]).
+ - To install the required libraries, run:
 
 ```bash
 python 3.11.9
@@ -26,25 +33,20 @@ python 3.11.9
 ```bash
 pip install -r requirements.txt
 ```
+- To run the script:
 
-## Usage
-
-1. Download the **rewrIT-er.py** file. Place it along with aimed .docx or .pdf file in the same folder. Open a terminal (Command Prompt) and navigate to this folder (cd [folder name]).
-2. Run the script from the command line as follows:
 ```bash
-python rewrIT-er.py --token [your GROQ-token] [input_file] [output_file]
+python rewrIT-er.py --token [your Groq-API-Key] [input_file] [output_file]
 ```
-- `from_lang`: The language code of the source language (e.g., `"ru"` for Russian).
-- `to_lang`: The language code of the target language (e.g., `"uk"` for Ukrainian).
 
 ### Example
 
-To translate an Excel file from Russian to Ukrainian:
+To rewrite origin text:
 ```bash
-python translate_excel.py ru uk
+python rewrIT-er.py --token gsk_........................................ book_origin.docx book_copy.docx
 ```
 
-**IMPORTANT**: This script will process the **first** .xlsx file it finds in the directory. **Ensure that only one excel file you want to translate is in the folder!**
+**IMPORTANT**: This script will process the **first** .docx or .pdf file it finds in the directory. Ensure that only one doc/pdf file you **want** to translate is in the folder!
 
 #### License
 
