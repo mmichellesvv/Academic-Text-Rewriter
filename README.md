@@ -34,7 +34,7 @@ Go to [https://console.groq.com/keys](https://console.groq.com/keys). Log in, cr
 2. Place them in the **same** folder as the `.docx` or `.pdf` file you want to rewrite.
 3. Open a terminal (Command Prompt or Bash) and navigate to this folder:
 ```bash
-`cd [your-folder-name]
+cd [your-folder-name]
 ```
 4. Create a virtual environment (**optional** but recommended):
 ```bash
@@ -60,21 +60,21 @@ python rewrIT-er.py --token [your Groq-API-Key] [input_file] [output_file]
 
 ---
 
-## Example
+### Example
 
 - To rewrite the content of a DOCX or PDF file:
-- 
+
 ```bash
 python rewrIT-er.py --token gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx book_origin.docx book_copy.docx
 ```
 
-**IMPORTANT**: This script will process the **first** .docx or .pdf file it finds in the directory. Ensure that only one doc/pdf file you **want** to translate is in the folder!
+**IMPORTANT**: This script will process the **first** `.docx` or `.pdf` file it finds in the directory. Ensure that only one doc/pdf file you **want** to translate is in the folder!
 
 ---
 
 ## License
 
-This project is licensed under the MIT License - see the MIT.md file for details.
+This project is licensed under the MIT License - see the `MIT.md` file for details.
 
 ---
 
