@@ -1,0 +1,8 @@
+transformers
+sentencepiece
+torch
+deep-translator
+python-docx
+pymupdf
+langdetect
+python-dotenv
