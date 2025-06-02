@@ -89,7 +89,7 @@ This project is licensed under the MIT License - see the `MIT.md` file for detai
 
 - Done successfuly! Head to: book_copy.docx
 ```
-<img src="https://github.com/user-attachments/assets/f2e8cf41-1e66-403e-a255-425ac7c3c6e3" alt="Description of image" width="700"/>
+<img src="https://github.com/user-attachments/assets/cf4d9401-52f1-40f6-882c-f72861d84abf" alt="Description of image" width="700"/>
 
 
 
