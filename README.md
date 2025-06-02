@@ -79,7 +79,7 @@ This project is licensed under the MIT License - see the `MIT.md` file for detai
 ---
 
 ## In:
-<img src="![image](https://github.com/user-attachments/assets/1cbaf496-2037-4084-9ae6-c558791b8b48)" alt="Description of image" width="700"/>
+<img src="https://github.com/user-attachments/assets/1cbaf496-2037-4084-9ae6-c558791b8b48" alt="Description of image" width="700"/>
 
 ## Out:
 ```bash
@@ -89,7 +89,7 @@ This project is licensed under the MIT License - see the `MIT.md` file for detai
 
 - Done successfuly! Head to: book_copy.docx
 ```
-<img src="![image](https://github.com/user-attachments/assets/f2e8cf41-1e66-403e-a255-425ac7c3c6e3)" alt="Description of image" width="700"/>
+<img src="https://github.com/user-attachments/assets/f2e8cf41-1e66-403e-a255-425ac7c3c6e3" alt="Description of image" width="700"/>
 
 
 
