@@ -1,6 +1,6 @@
 # Academic text rewriter
 
-Repo provides a Python script for translating the contents of Excel files between different languages.
+This repository provides a Python script for rewriting academic texts (from `.docx` or `.pdf`) with optional expansion, using Groq Cloud's language models.
 
 ---
 ### Abstract
@@ -11,25 +11,44 @@ Publishing is a tricky issue when it comes to renovating and extending the origi
 
 ## Features
 
-- **Automatic File Detection:** The script automatically detects the first Excel file in the current directory.
-- **Language Translation:** Translates text from one language to another using the `translate` library.
-- **Progress Indicator:** Displays a progress indicator while processing the translation.
-- **Output Naming:** Saves the translated file with a prefix indicating the target language.
+- **Multi-format Input Support**: Automatically processes either .docx or .pdf files, depending on the file extension.
+
+- **Chunk-wise Rewriting**: Splits input text into manageable chunks (by paragraphs in .docx or reconstructed paragraph-like segments in .pdf) before rewriting, which helps preserve context and improves output quality.
+
+- **Groq Cloud API Integration**: Uses Groq language models for semantic rewriting with optional content expansion.
+
+- **Preserves Logical Structure**: Special handling of headings or section openers (e.g., lines ending with a colon) to keep text coherent across chunks.
+
+- **Terminal-based CLI Tool**: No GUI needed; just run the script from terminal with a few parameters.
+
+- **Automatic File Detection**: The script detects the first supported file in the directory if no input is explicitly provided.
 
 ### Usage
 
 ## API Key Creating
 
-Go to **https://console.groq.com/keys**. Log in, create key, copy number and keep it **safety**.
+Go to **https://console.groq.com/keys**. Log in, create an API key, copy the token and keep it **safe**.
 
 ## Installation
-1. Download the **requirements.txt** and **rewrIT-er.py** files from repo. Place it along with aimed .docx or .pdf file in the **same** folder.
-2. Open a terminal (Command Prompt) and navigate to this folder (cd [folder name]).
- - To install the required libraries, run:
+1. Download **requirements.txt** and **rewrIT-er.py** files from the repo.
+2. Place them in the **same** folder as the .docx or .pdf file you want to rewrite.
+3. Open a terminal (Command Prompt or Bash) and navigate to this folder:
+```bash
+`cd [your-folder-name]
+```
+4. Create a virtual environment (**optional** but recommended):
+```bash
+python3 -m venv venv
+source venv/bin/activate        # On Unix/macOS
+venv\Scripts\activate           # On Windows
+```
+- To install Python 3.11.9 **if not already installed**:
 
 ```bash
-python 3.11.9
+winget install --id Python.Python.3.11 --source winget
 ```
+- To install the required libraries, run:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -41,7 +60,8 @@ python rewrIT-er.py --token [your Groq-API-Key] [input_file] [output_file]
 
 ### Example
 
-To rewrite origin text:
+- To rewrite the content of a DOCX or PDF file:
+- 
 ```bash
 python rewrIT-er.py --token gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx book_origin.docx book_copy.docx
 ```
@@ -57,5 +77,43 @@ This project is licensed under the MIT License - see the MIT.md file for details
 
 ## Out-data:
 <img src="https://github.com/user-attachments/assets/c0eb7a1f-dfcd-4718-8c74-7fee61e1e210" alt="Description of image" width="700"/>
+
+# Academic Text Rewriter
+
+This repository provides a Python script for rewriting academic texts (from `.docx` or `.pdf`) with optional expansion, using Groq Cloud's language models.
+
+---
+
+### 🧠 Abstract
+
+Publishing is a tricky issue when it comes to renovating and extending the original book — by adding paragraphs, text chunks, or other details. Thanks to Python and Groq Cloud, editorial audits can be automated. This repo offers a flexible tool for text rewriting with slight expansion.
+
+---
+
+## ✨ Features
+
+- **Multi-format Input Support**: Automatically processes either `.docx` or `.pdf` files, depending on the file extension.
+- **Chunk-wise Rewriting**: Splits input text into manageable chunks (by paragraphs in `.docx`, or reconstructed paragraph-like segments in `.pdf`) before rewriting, which helps preserve context and improves output quality.
+- **Groq Cloud API Integration**: Uses Groq language models for semantic rewriting with optional content expansion.
+- **Preserves Logical Structure**: Special handling of headings or section openers (e.g., lines ending with a colon) to keep text coherent across chunks.
+- **Terminal-based CLI Tool**: No GUI needed; just run the script from terminal with a few parameters.
+- **Automatic File Detection**: The script detects the first supported file (`.docx` or `.pdf`) in the directory if no input is explicitly provided.
+
+---
+
+## 🔐 API Key Creation
+
+Go to [https://console.groq.com/keys](https://console.groq.com/keys). Log in, create an API key, copy the token, and **keep it safe**.
+
+---
+
+## ⚙️ Installation
+
+1. Download `requirements.txt` and `rewrIT-er.py` files from this repository.
+2. Place them in the **same** folder as the `.docx` or `.pdf` file you want to rewrite.
+3. Open a terminal (Command Prompt or Bash) and navigate to this folder:
+```bash
+cd [your-folder-name]
+
 
 
