@@ -43,7 +43,7 @@ python rewrIT-er.py --token [your Groq-API-Key] [input_file] [output_file]
 
 To rewrite origin text:
 ```bash
-python rewrIT-er.py --token gsk_........................................ book_origin.docx book_copy.docx
+python rewrIT-er.py --token gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx book_origin.docx book_copy.docx
 ```
 
 **IMPORTANT**: This script will process the **first** .docx or .pdf file it finds in the directory. Ensure that only one doc/pdf file you **want** to translate is in the folder!
