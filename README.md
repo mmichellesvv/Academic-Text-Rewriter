@@ -1,9 +1,10 @@
-# Academic text rewriter
+# Academic Text Rewriter
 
 This repository provides a Python script for rewriting academic texts (from `.docx` or `.pdf`) with optional expansion, using Groq Cloud's language models.
 
 ---
-### Abstract
+
+## Abstract
 
 Publishing is a tricky issue when it comes to renovating and extending the original book — by adding paragraphs, text chunks, or other details. Thanks to Python and Groq Cloud, editorial audits can be automated. This repo offers a flexible tool for text rewriting with slight expansion..
 
@@ -20,15 +21,15 @@ Publishing is a tricky issue when it comes to renovating and extending the origi
 
 ---
 
-### Usage
+## Usage
 
-## API Key Creating
+### API Key Creating
 
 Go to [https://console.groq.com/keys](https://console.groq.com/keys). Log in, create an API key, copy the token, and **keep it safe**.
 
 ---
 
-## Installation
+### Installation
 1. Download `requirements.txt` and `rewrIT-er.py` files from this repository.
 2. Place them in the **same** folder as the `.docx` or `.pdf` file you want to rewrite.
 3. Open a terminal (Command Prompt or Bash) and navigate to this folder:
@@ -59,7 +60,7 @@ python rewrIT-er.py --token [your Groq-API-Key] [input_file] [output_file]
 
 ---
 
-### Example
+## Example
 
 - To rewrite the content of a DOCX or PDF file:
 - 
@@ -71,16 +72,16 @@ python rewrIT-er.py --token gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx book_origi
 
 ---
 
-#### License
+## License
 
 This project is licensed under the MIT License - see the MIT.md file for details.
 
 ---
 
-## In-data:
+## In:
 <img src="https://github.com/user-attachments/assets/f4880462-4cca-4059-9a3f-a4819146463b" alt="Description of image" width="700"/>
 
-## Out-data:
+## Out:
 <img src="https://github.com/user-attachments/assets/c0eb7a1f-dfcd-4718-8c74-7fee61e1e210" alt="Description of image" width="700"/>
 
 
