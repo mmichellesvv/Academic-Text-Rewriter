@@ -79,7 +79,7 @@ This project is licensed under the MIT License - see the `MIT.md` file for detai
 ---
 
 ## In:
-<img src="https://github.com/user-attachments/assets/1cbaf496-2037-4084-9ae6-c558791b8b48" alt="Description of image" width="700"/>
+<img src="https://github.com/user-attachments/assets/062318a4-95b7-4c58-bff3-25eee9325913" alt="Description of image" width="700"/>
 
 ## Out:
 ```bash
